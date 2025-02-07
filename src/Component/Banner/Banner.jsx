@@ -7,7 +7,10 @@ import {
 
 const Banner = () => {
   return (
-    <div className="flex items-center justify-center min-h-screen  text-white">
+    <div
+      id="home"
+      className="flex items-center justify-center min-h-screen  text-white"
+    >
       <div className="container mx-auto px-4 md:flex md:items-center md:justify-center">
         {/* Left Section */}
         <div className="text-center md:text-left md:w-1/2 lg:pl-20">

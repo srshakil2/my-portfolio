@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import { Link, useParams } from "react-router-dom";
 
 const Details = () => {
@@ -6,6 +7,9 @@ const Details = () => {
   console.log(data.id);
   return (
     <div>
+      <Helmet>
+        <title>Robiul || Details</title>
+      </Helmet>
       <div className="container mx-auto px-4 py-10">
         <div className="max-w-2xl mx-auto bg-white shadow-lg p-6 rounded-lg">
           {/* id == 1 */}

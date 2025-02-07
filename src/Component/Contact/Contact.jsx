@@ -2,7 +2,10 @@ import { FaEnvelope, FaPhone, FaWhatsapp } from "react-icons/fa";
 
 const Contact = () => {
   return (
-    <div className="flex items-center justify-center  transition-transform duration-200 transform hover:scale-110 p-4">
+    <div
+      id="contact"
+      className="flex items-center justify-center  transition-transform duration-200 transform hover:scale-110 p-4"
+    >
       <div className="bg-white shadow-lg rounded-2xl p-6 w-full max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl text-center">
         <h2 className="text-4xl font-bold text-gray-800 mb-4">
           Contact With Me

@@ -21,7 +21,7 @@ const Skills = () => {
   ];
 
   return (
-    <div>
+    <div id="skills">
       {/* marque */}
       <div className=" text-white px-4 md:px-6 lg:px-20 ">
         <Marquee

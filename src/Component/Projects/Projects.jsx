@@ -19,7 +19,7 @@ const Projects = () => {
     },
   ];
   return (
-    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-7 ">
+    <div id="projects" className="grid md:grid-cols-2 lg:grid-cols-3 gap-7 ">
       {datas.map((data) => (
         <div
           key={data.id}

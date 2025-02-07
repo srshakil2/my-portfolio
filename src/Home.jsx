@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import AboutMe from "./Component/AboutMe/AboutMe";
 import Banner from "./Component/Banner/Banner";
 import Contact from "./Component/Contact/Contact";
@@ -9,6 +10,9 @@ import Skills from "./Component/Skills/Skills";
 const Home = () => {
   return (
     <div>
+      <Helmet>
+        <title>Robiul || Home</title>
+      </Helmet>
       {/* banner */}
       <div>
         <Banner></Banner>

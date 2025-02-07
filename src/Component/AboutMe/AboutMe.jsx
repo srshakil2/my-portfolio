@@ -1,6 +1,6 @@
 const AboutMe = () => {
   return (
-    <div className="text-center px-4 md:px-6 lg:px-20 space-y-5">
+    <div id="aboutMe" className="text-center px-4 md:px-6 lg:px-20 space-y-5">
       <span className="text-blue-500 text-2xl font-semibold">About Me</span>
       <h4 className="text-white text-5xl font-bold">
         My web development journey

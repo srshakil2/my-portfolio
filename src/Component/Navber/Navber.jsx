@@ -1,7 +1,10 @@
+import { NavLink } from "react-router-dom";
+import { Link } from "react-scroll";
+
 const Navber = () => {
   return (
     <div>
-      <div className="navbar bg-indigo-900">
+      <div className="navbar bg-indigo-950 px-5">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -22,45 +25,129 @@ const Navber = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              className="menu menu-sm dropdown-content bg-indigo-950 rounded-box z-[1] mt-3 w-52 p-2 shadow"
             >
               <li>
-                <a>Item 1</a>
+                <Link
+                  to="home"
+                  smooth={true}
+                  duration={500}
+                  className={"text-lg text-white"}
+                >
+                  Home
+                </Link>
               </li>
               <li>
-                <a>Parent</a>
-                <ul className="p-2">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
+                <Link
+                  to="aboutMe"
+                  smooth={true}
+                  duration={500}
+                  className={"text-lg text-white"}
+                >
+                  About
+                </Link>
               </li>
               <li>
-                <a>Item 3</a>
+                <Link
+                  to="skills"
+                  smooth={true}
+                  duration={500}
+                  className={"text-lg text-white"}
+                >
+                  Skills
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="projects"
+                  smooth={true}
+                  duration={500}
+                  className={"text-lg text-white"}
+                >
+                  Projects
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="contact"
+                  smooth={true}
+                  duration={500}
+                  className={"text-lg text-white"}
+                >
+                  Contact Us
+                </Link>
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">daisyUI</a>
+          {/* img */}
+          <div>
+            <NavLink to={"/"}>
+              <img
+                src="https://img.icons8.com/?size=64&id=AfM2kzPzTz6Q&format=png"
+                alt="Robiul Hasan"
+              />
+            </NavLink>
+          </div>
         </div>
         {/* md and large divice */}
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <a>Item 1</a>
+              <Link
+                to="home"
+                smooth={true}
+                duration={500}
+                className={"text-lg text-white"}
+              >
+                Home
+              </Link>
             </li>
             <li>
-              <a>item 2</a>
+              <Link
+                to="aboutMe"
+                smooth={true}
+                duration={500}
+                className={"text-lg text-white"}
+              >
+                About
+              </Link>
             </li>
             <li>
-              <a>Item 3</a>
+              <Link
+                to="skills"
+                smooth={true}
+                duration={500}
+                className={"text-lg text-white"}
+              >
+                Skills
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="projects"
+                smooth={true}
+                duration={500}
+                className={"text-lg text-white"}
+              >
+                Projects
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="contact"
+                smooth={true}
+                duration={500}
+                className={"text-lg text-white"}
+              >
+                Contact Us
+              </Link>
             </li>
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="btn">Button</a>
+          <button className=" bg-blue-500 hover:bg-blue-600 text-white text-lg font-semibold py-2 px-6 rounded-full shadow-lg">
+            Resume
+          </button>
         </div>
       </div>
     </div>
