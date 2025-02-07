@@ -1,16 +1,14 @@
 import AboutMe from "./Component/AboutMe/AboutMe";
 import Banner from "./Component/Banner/Banner";
-import Navber from "./Component/Navber/Navber";
+import Contact from "./Component/Contact/Contact";
+import Footer from "./Component/Footer/Footer";
+
 import Projects from "./Component/Projects/Projects";
 import Skills from "./Component/Skills/Skills";
 
 const Home = () => {
   return (
     <div>
-      {/* navber */}
-      {/* <div className="">
-        <Navber></Navber>
-      </div> */}
       {/* banner */}
       <div>
         <Banner></Banner>
@@ -26,6 +24,12 @@ const Home = () => {
         <div>
           <Projects></Projects>
         </div>
+      </div>
+      <div className="mt-12">
+        <Contact></Contact>
+      </div>
+      <div className="mt-5">
+        <Footer></Footer>
       </div>
     </div>
   );
