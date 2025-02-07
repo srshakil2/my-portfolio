@@ -3,6 +3,7 @@ import {
   FaTwitter,
   FaLinkedinIn,
   FaYoutube,
+  FaWhatsapp,
 } from "react-icons/fa";
 
 const Banner = () => {
@@ -41,7 +42,8 @@ const Banner = () => {
           {/* Social Icons */}
           <div className="flex space-x-4 absolute -bottom-8 transform translate-y-1/2">
             <a
-              href="#"
+              href="https://www.facebook.com/robiul.hasan.10048379"
+              target="_blank"
               className="w-10 h-10 flex items-center justify-center bg-blue-500 hover:bg-blue-600 rounded-full shadow-lg text-white transition-transform duration-300 transform hover:scale-125"
             >
               <FaFacebookF />
@@ -62,7 +64,7 @@ const Banner = () => {
               href="#"
               className="w-10 h-10 flex items-center justify-center bg-blue-500 hover:bg-blue-600 rounded-full shadow-lg text-white transition-transform duration-300 transform hover:scale-125"
             >
-              <FaYoutube />
+              <FaWhatsapp />
             </a>
           </div>
         </div>
