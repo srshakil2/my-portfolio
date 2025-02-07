@@ -4,11 +4,23 @@ import "./index.css";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./Home";
+import MainHome from "./MainHome";
+import Details from "./Component/Details/Details";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home></Home>,
+    element: <MainHome></MainHome>,
+    children: [
+      {
+        path: "/",
+        element: <Home></Home>,
+      },
+      {
+        path: "/projects/:id",
+        element: <Details></Details>,
+      },
+    ],
   },
 ]);
 
